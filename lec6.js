@@ -30,11 +30,11 @@ let a="12";
 let b=12;
 let c=12;
 
-if(a==b){   
+if(a==b){
     console.log("Both a and b has same value");
 }
 
-if(b==c){           
+if(b==c){
     console.log("Both a and c has same value and same datatype");
 }
 
@@ -189,6 +189,7 @@ if(n1>n2 && n1>n3){
 }
 console.log("Maximum number is "+maximum);
 
+//--------------------------------by using built-in max function------------------------------------------//
 console.log(Math.max(n1,n3));//by using built-in max function
 
 console.log(Math.min(n1,n3));

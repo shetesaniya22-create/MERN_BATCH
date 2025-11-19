@@ -95,13 +95,13 @@ if(""*1){
 }
 
 //Short circuiting for && operator
-console.log(false && "Hello"); 
-console.log(0 && 5);           
-console.log("Hi" && "Hello");  
+console.log(false && "Hello");
+console.log(0 && 5);
+console.log("Hi" && "Hello");
 
 //Short circuiting for || operator
-console.log(true || "Hello");  
-console.log(0 || 5);          
+console.log(true || "Hello");
+console.log(0 || 5);
 console.log("" || "Default");  
 
 
@@ -120,7 +120,7 @@ let divisor=0;
 for(let i=1;i<=Num;i++){
     if(Num%i ==0 ){
         divisor++;
-    } 
+    }
 }
 const message=divisor>2?"Not Prime":"Prime";
     console.log(message);

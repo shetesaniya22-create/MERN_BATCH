@@ -18,8 +18,7 @@ numbs>0 ? console.log("Positive") :console.log("Negative");
 //nested ternary operator
 let a1=-20;
 let R=a1>0 ? "Positive" :
- a1<0 ? "Negative" : 
- "Zero";
+ a1<0 ? "Negative" :"Zero";
 console.log(a1+" is a "+R+" number");
 
 
