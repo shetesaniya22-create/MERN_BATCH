@@ -164,6 +164,7 @@ console.log({ obj1 });
 let studentCopy1 = {...student };
 studentCopy1.name = "copy";
 console.log({ studentCopy1, student });
+console.log({ studentCopy1, student });
 
 /* Conclusion for using spread operator with objects: for one level it's deep copy, 
 for other nested levels, it's shallow copy */
