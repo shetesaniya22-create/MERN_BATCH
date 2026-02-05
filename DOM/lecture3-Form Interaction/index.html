@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <form id="user-info" action="/save" method="get">
+
+      <label for="firstName">First Name</label>
+      <input type="text" name="firstName" id="firstName" /><br><br>
+
+      <label for="lastName">Last Name</label>
+      <input type="text" name="lastName" id="lastName" /><br><br>
+
+      <label for="gender">Gender:</label><br>
+      <input type="radio" name="gender" id="firstGender" value="Male" />
+      <label for="gender">Male</label><br>
+      <input type="radio" name="gender" id="secondGender" value="Female" />
+      <label for="gender">Female</label>
+      <br><br>
+
+
+      <label for="">Which fruits do you like?</label><br>
+      <input type="checkbox" name="fruit" id="fruit1" value="apple" />
+      <label for="apple">Apple</label><br>
+
+      <input type="checkbox" name="fruit" id="fruit2" value="kiwi" />
+      <label for="kiwi">Kiwi</label><br>
+
+      <input type="checkbox" name="fruit" id="fruit3" value="strawberry" />
+      <label for="strawberry">Strawberry</label><br><br>
+
+      <button type="submit">Submit</button>
+    
+    </form>
+  </body>
+</html>

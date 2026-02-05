@@ -84,7 +84,7 @@ if(ticketNum==11 || ticketNum==101){
 //if a user is logged in and subscription then check condition
 let loggedIn=true;
 let subscription=true;
-if(loggedIn && subscription){ //no need to write condition equal to true/false 
+if(loggedIn && subscription){ //no need to write condition equal to true/false
     console.log("Premium user having premium access of content");
 }else{
     console.log("Upgrade your plan");
@@ -117,13 +117,15 @@ if(Math.floor(n)==n){
 }else{
     console.log("Decimal");
 }
+
+//By using modulo 1
 if(n%1==0){
     console.log("Integer");
 }else{
     console.log("Decimal");
 }
 
-
+//To use
 let s=11.01;
 console.log(Math.floor(s));//11
 console.log(Math.ceil(s)); //12
@@ -169,7 +171,7 @@ let highestMark=marks1;
 let highestName=names1;
 
 if(marks2>marks1){
-    highestMark=marks1;
+    highestMark=marks2;
     highestName=names2
 }
 console.log(highestName+" having highest marks as "+highestMark);
@@ -192,7 +194,7 @@ console.log("Maximum number is "+maximum);
 //--------------------------------by using built-in max function------------------------------------------//
 console.log(Math.max(n1,n3));//by using built-in max function
 
-console.log(Math.min(n1,n3));
+console.log(Math.min(n1,n3));//By using built in min function
 
 console.log(Math.max(n1,n2,n3));  //by using built-in max function for three variables
 

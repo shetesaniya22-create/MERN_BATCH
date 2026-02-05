@@ -19,7 +19,7 @@ c = b / a;
 console.log("b/a = " + c);
 
 c = -4 / 0;
-console.log("-4 / 0 =", c);
+console.log("-4 / 0 =", c);//Output---> -0
 
 c = 4 / Infinity;
 console.log("4 / Infinity =", c);
@@ -137,4 +137,11 @@ console.log(z2);
 const dsl=4+"34"*" "/5; //convert the empty string to zero.....4+0/5.....4
 console.log(dsl);
 
+
+// -----------Practise-------------------------
+
+// function test(){
+//     var a=10;
+// }
+// console.log(a);//Gives error as --> a is not defined
 

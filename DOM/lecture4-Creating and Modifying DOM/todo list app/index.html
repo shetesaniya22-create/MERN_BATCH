@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="main.js"></script>
+
+    <article class="todos-container">
+
+      <section class="add-todos">
+        <input id="new-todo" type="text" />
+        <button id="add-todo">Add</button>
+      </section>
+      
+      <section class="todos">
+        <ul class="tabs">
+          <li class="tab-item" data-value="all">All</li>
+          <li class="tab-item" data-value="todo">Yet to do</li>
+          <li class="tab-item" data-value="completed">Completed</li>
+        </ul>
+
+        <ul id="todos-list">
+          <!-- <li class="todo-item">
+            <input type="checkbox" />
+            <p>Some todo</p>
+            <button>Delete</button>
+          </li> -->
+        </ul>
+      </section>
+
+      <section id="stats">
+        <h2>Stats</h2>
+        <p id="total">Total</p>
+        <p id="todo">Yet to do</p>
+        <p id="completed">Completed</p>
+      </section>
+
+    </article>
+  </body>
+</html>

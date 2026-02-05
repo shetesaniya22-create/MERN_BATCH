@@ -138,3 +138,9 @@ for(let i=2;i<=Math.floor(Nums);i++){
 const msg=(isPrime && Nums!==1) ? " is prime number" : " is not a prime number";
 console.log(Nums + msg );
 
+
+const nn=false && 5;
+console.log({nn});
+
+const nn3= nn===false && 34;
+console.log({nn3});

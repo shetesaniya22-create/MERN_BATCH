@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Female Candidates</title>
+</head>
+<body>
+
+<form>
+    <input type="text" placeholder="Enter first name" id="fname"><br><br>
+    <input type="text" placeholder="Enter last name" id="lname"><br><br>
+
+    <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Female Candidates</h2>
+<div id="result"></div>
+
+<script>
+    const form = document.querySelector("form");
+    const resultDiv = document.getElementById("result");
+    let candidates = [];
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        let candidate = {
+            firstName: document.getElementById("fname").value,
+            lastName: document.getElementById("lname").value,
+            gender: document.getElementById("gender").value
+        };
+
+        candidates.push(candidate);
+        showFemaleCandidates();
+        form.reset();
+    });
+
+    function showFemaleCandidates() {
+        resultDiv.innerHTML = "";
+        let index = 1;
+
+        for (let i = 0; i < candidates.length; i++) {
+            if (candidates[i].gender === "female") {
+                let p = document.createElement("p");
+                let text = document.createTextNode(
+                  
+                    candidates[i].firstName + " " +
+                    candidates[i].lastName
+                );
+                p.appendChild(text);
+                resultDiv.appendChild(p);
+                index++;
+            }
+        }
+
+       
+    }
+</script>
+
+</body>
+</html>

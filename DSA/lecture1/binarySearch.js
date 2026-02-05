@@ -9,7 +9,7 @@
 
 console.log("Binary Search:");
 
-let arr = [10, 22, 43, 45, 64, 76]; 
+let arr = [10, 22, 43, 45, 64, 76];
 function binarySearch(arr, target) {
    console.log("The index of an searched element is:");
     let low = 0;
@@ -81,7 +81,7 @@ function lowerBound(arr, target) {
         
 
         if (arr[mid] < target) {
-            low = mid + 1;
+            low = mid + 1; //
         } else {
             high = mid;
         }
@@ -114,6 +114,8 @@ function upperBound(arr, target) {
 
   return low;   
 }
+
+
 
 
 

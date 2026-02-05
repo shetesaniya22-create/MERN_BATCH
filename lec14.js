@@ -6,7 +6,7 @@ arr = [1, 2, 3, 4, 5, 6];
 let n = arr.length;
 let totalSum = 0;
 
-console.log("Subarrays and their sums:");
+console.log("Sub-arrays and their sums:");
 for (let i = 0; i < n; i++) {
   let subArr = [];
   let subSum = 0;
@@ -117,9 +117,11 @@ let sum=0;
 
 for(let i=0;i<arr.length;i++){
     
-    for(let j=0;j<arr[i].length;j++)
+    for(let j=0;j<arr[i].length;j++){
+            sum+=arr[i][j];
+    }
         
-        sum+=arr[i][j];
+       
 }
 console.log(sum);
 
@@ -188,8 +190,8 @@ arr=[[1,2,3],
      [7,8,9]];
 printPrimaryDiagonal(arr);
 
-console.log("Printing the primary array & secondary array: ");
 
+console.log("Printing the primary array & secondary array: ");
 function printPrimaryyDiagonal(arr){
     let n=arr.length;
     for(let i=0;i<n;i++){

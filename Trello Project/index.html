@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="main.js"></script>
+    <header id="header">
+      <nav class="nav">
+        <ul id="boards-container"></ul>
+
+        <section id="board-controls">
+          <button id="btn-new-board">New Board</button>
+          <button id="edit-board">Edit Board</button>
+        </section>
+      </nav>
+    </header>
+    <main class="list-container">
+      <article id="new-card-dialog" class="hidden">
+        <header>
+          <h1>Enter details</h1>
+        </header>
+
+        <form id="new-card-form">
+          <fieldset>
+            <label for="title">Title</label>
+            <input required type="text" name="title" id="card-title" />
+          </fieldset>
+          <fieldset>
+            <label for="description">Description</label>
+            <textarea name="description" id="card-description" rows="5"></textarea>
+          </fieldset>
+          <fieldset>
+            <label for="due-date">Due</label>
+            <input type="date" name="due-date" id="card-due-date" />
+          </fieldset>
+
+          <footer>
+            <button type="reset">Cancel</button>
+            <button type="submit">Save</button>
+          </footer>
+        </form>
+      </article>
+    </main>
+    <footer id="footer">Footer section</footer>
+  </body>
+</html>

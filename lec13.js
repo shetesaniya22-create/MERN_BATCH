@@ -5,7 +5,7 @@ const { log } = require("node:console");
 
 let arr=[2,4,7,9,6];
 
-//SPICE- It doesn't changes the original array 
+//SLICE- It doesn't changes the original array 
 //1-Slice function works like it will include the beginning value and exclude the given index
 //2-If we give first index only then it will print result from start index till N
 //3-If we don't give start and end index then it will print whole array 
@@ -19,7 +19,7 @@ console.log({arr});
 
 
 
-//SLICE - Changes the original array
+//SPLICE - Changes the original array
 //1-Splice function delete the elements from array what is given 
 // i.e (1,3) it will take the elements from 1-3 in array 
 console.log("Splice Function: ");
@@ -32,7 +32,7 @@ console.log({arr});
 //CONCATE - Combine two array
 console.log("Concate Function: ");
 let arr1=[12,13,14,15,16];
-console.log(arr.concat(arr1));
+console.log(arr.concat(...arr1));
 
 
 //---------------------LOOPS IN ARRAYS---------------------------------//
@@ -77,7 +77,6 @@ for(let i=0;i<arr11.length;i++){
 console.log({newArr});
 
 console.log("To print prefix sum using array: (METHOD-2) ");
-
 let sums=[];
 sums[0]=arr11[0];
 for(let i=1;i<arr11.length;i++){
@@ -111,9 +110,9 @@ function swapArray(arr, index1, index2) {
 }
 swapArray(arr1, 1, 2);
 
-console.log("To print index of odd elments in array: ");
 
-arr1 = [1, 2, 3, 4]; 
+console.log("To print index of odd elments in array: ");
+arr1 = [1, 2, 3, 4];
 function oddElementIndex(arr1){
     for(let i in arr11){
         if(arr1[i]%2!==0){
@@ -121,7 +120,7 @@ function oddElementIndex(arr1){
         
     }
 }
-}  
+}
 oddElementIndex(arr1);
 
 
@@ -218,11 +217,8 @@ for(let i=0;i<n;i++){
   for(let j=i;j<n;j++){
     subArr.push(arr[j]);
     console.log(subArr.join(" "));
-    
-
   }
 }
-
 
 
 

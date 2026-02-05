@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Basics</title>
+</head>
+<body>
+    <p>What is DOM</p>
+    <p style="color: red;">It is known as Document Object Model</p>
+    <p id="content">It is used to represent HTML element as a objects</p>
+    <div id="container">
+        <span>this is inside a span</span>
+        <p>this is inside paragraph</p>
+        <p>this is in another paragraph</p>
+    </div>
+    
+    <div class="outer">
+        <li>
+            <p>this is the inner para 
+                <span style="display: none;">this is inside the inner para</span>
+            </p>
+            <label for="fname">Name</label>
+            <input type="text" name="fname" id="fname">
+        </li>
+    </div>
+
+    <table id="age-table">
+        <tbody>
+            <td>Age:</td>
+            <tr>
+            <td id="age-list">
+                <label><input type="radio" name="age" value="young">less than18</label><br><br>
+                <label><input type="radio" name="age" value="mature">18-50</label><br><br>
+                <label><input type="radio" name="age" value="senior">more than 50</label><br><br>
+            </td>
+            
+            </tr>
+
+            <tr>
+                <td>Additionally:</td>
+                <td>
+                    <input type="text" name="info[0]">
+                    <input type="text" name="info[1]">
+                    <input type="text" name="info[2]">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="enter first name" name="first name"><br><br>
+        <input type="text" placeholder="enter last name" name="last name"><br><br>
+        <input type="email" placeholder="enter your email" name="email"><br><br>
+        <input type="email" placeholder="confirm your email" name="confirm email"> <br><br>
+        <select name="" id="gender">
+            <option value="">Select Gender</option>
+            <option value="male" >Male</option> 
+            <option value="female" >Female</option>
+        </select><br><br>
+        <button>Check Email</button>
+    </form>
+    
+    
+    <script>
+        let gender=document.getElementById('gender').value;
+        console.log(gender);
+
+
+        let formData=[];
+        document.querySelector('button').addEventListener('click', (e)=>{
+            e.preventDefault();
+            formData[0]=document.querySelector('input[name="first name"]').value;
+            formData[1]=document.querySelector('input[name="last name"]').value;
+            formData[2]=document.querySelector('input[name="email"]').value;
+            formData[3]=document.querySelector('input[name="confirm email"]').value;
+            console.log(formData);
+        });
+
+    </script>
+</body>
+</html>

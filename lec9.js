@@ -1,10 +1,10 @@
 let N=6;
 let M=5;
 
-for(i=0;i<N;i++){
+for(i=1;i<=N;i++){
     let numString="";
-    for(j=0;j<M;j++){
-      numString+=j+1+ "  ";
+    for(j=1;j<M;j++){
+      numString+=j+ "  ";
       
     }
     console.log(numString);

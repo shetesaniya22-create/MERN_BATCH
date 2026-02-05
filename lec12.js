@@ -122,7 +122,7 @@ console.log(arr);
 arr.push(8,9,10);
 console.log(arr);
 
-//to nsert the elements at the beginning of an array
+//to insert the elements at the beginning of an array
 arr.unshift(-2,-1,0);
 console.log(arr);
 
