@@ -1,0 +1,25 @@
+.user-card {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color:blanchedalmond;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#name {
+    color: #333;
+}
+
+#bio {
+    color: #666;
+    margin-bottom: 8px;
+}
+@media (max-width: 500px) {
+    .user-card {
+        width: 100%;
+    }
+}
